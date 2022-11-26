@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>메인 페이지</title>
+    <title>상세 페이지</title>
 </head>
 <body>
     {% extends 'base.html' %}
     {% block content %}
-    <h1>메인 페이지입니다.</h1>
-    <!--
-        자유롭게 페이지 구현
-    -->
+    <h2>>{{ content_list.title }}</h2>
+    <div>
+        {{ content_list.content }}
+    </div>   
     {% endblock %}
+       
 </body>
 </html>
